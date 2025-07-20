@@ -4,8 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./src/input.css">
+    <link href="./src/output.css" rel="stylesheet">
+
 </head>
 <body>
-    
+    <!-- HEADER -->
+    <header class="header m-auto">
+        <!--NAVBAR-->
+        <nav class="w-full grid grid-cols-[30%_40%_30%] justify-between m-auto mt-10 mb-18 ">
+            <div class="flex gap-2 justify-start items-center " >
+                <img src="./legal-solution-resources/images/logo.png " alt="logo">
+                <h3 class="garamond-bold text-4xl absolute ml-14">Justice</h3></div>
+            <div>
+            <ul class="flex gap-7 m-auto justify-center items-center h-16">
+                <li class="poppins-regular"><a href="#Home">Home</a></li>
+                <li><a href="#Services">Services ></a></li>
+                <li><a href="#Cases">Cases ></a></li>
+                <li><a href="#Blog">Blog ></a></li>
+                <li><a href="#Contact Us">Contact Us ></a></li>
+            </ul></div>
+            <div class="flex justify-end">
+                <button class="w-56 h-16">Free Consultation</button>
+            </div>    
+        </nav>
+        <div class="header-background-image m-auto flex flex-col text-white text-center">
+            <div class="w-4/5 h-auto m-auto">
+            <h1 class="garamond-bold text-7xl">We Provide Effective Legal Solutions</h1>
+            <p class="mt-3.5 w-3/4 m-auto">There are many variations of passages of Lorem Ipsum available, but the majority 
+                <br> have suffered alteration in some form, by injected humour.</p>
+            <div class="mt-8 w-full space-x-2">
+                <input class="w-[450px] h-16  bg-amber-50 rounded-lg pl-3 text-black" placeholder="Search your services " >
+                <button class="w-38 h-16">Search</button>
+            </div>
+        </div>
+        </div>
+        <main class="main">
+            <section class="flex flex-col m-auto text-center">
+                <div>
+                    <h2>The Legal Practice Area</h2>
+                    <p>There are many variations of passages of Lorem Ipsum available,
+                    but the majority have <br> suffered alteration in some form, by injected humour.</p>
+                </div>
+                <div class="w-full grid grid-cols-3 grid-rows-2 items-center p-5">
+                    <div>
+                        <img src="./legal-solution-resources/images/" alt="">
+                    </div>
+                </div>
+            </section>
+        </main>
+    </header>
 </body>
 </html>
