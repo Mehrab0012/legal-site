@@ -12,211 +12,212 @@
 </head>
 <body>
     <!-- HEADER SECTION -->
-    <header class="header m-auto">
+    <header class="header m-auto px-4 md:px-0">
         <!-- NAVIGATION BAR -->
-        <nav class="w-full grid grid-cols-[30%_40%_30%] justify-between m-auto mt-10 mb-18 ">
+        <nav class="w-full flex flex-col md:grid md:grid-cols-[30%_40%_30%] justify-between m-auto mt-5 md:mt-10 mb-10 md:mb-18 items-center">
             <!-- Logo and Site Title -->
-            <div class="flex gap-2 justify-start items-center " >
-                <img src="./legal-solution-resources/images/logo.png " alt="logo">
-                <span class="garamond-bold text-4xl absolute ml-14">Justice</span>
+            <div class="flex gap-2 justify-center md:justify-start items-center mb-4 md:mb-0">
+                <img src="./legal-solution-resources/images/business.png " alt="logo" class="absolute hidden md:block">
+                <span class="garamond-bold text-3xl md:text-4xl ml-2 md:ml-20">Justice</span>
             </div>
             <!-- Navigation Links -->
-            <div>
-            <ul class="flex gap-7 m-auto justify-center items-center h-16">
-                <li class="poppins-regular"><a href="#Home">Home</a></li>
-                <li><a href="#Services">Services ></a></li>
-                <li><a href="#Cases">Cases ></a></li>
-                <li><a href="#Blog">Blog ></a></li>
-                <li><a href="#Contact Us">Contact Us ></a></li>
-            </ul></div>
+            <div class="hidden md:block">
+                <ul class="flex gap-4 md:gap-7 m-auto justify-center items-center h-16">
+                    <li class="poppins-regular"><a href="#Home">Home</a></li>
+                    <li><a href="#Services">Services ></a></li>
+                    <li><a href="#Cases">Cases ></a></li>
+                    <li><a href="#Blog">Blog ></a></li>
+                    <li><a href="#Contact Us">Contact Us ></a></li>
+                </ul>
+            </div>
             <!-- Consultation Button -->
-            <div class="flex justify-end">
-                <button class="w-56 h-16">Free Consultation</button>
-            </div>    
+            <div class="flex justify-center md:justify-end">
+                <button class="w-48 md:w-56 h-12 md:h-16 text-sm md:text-base">Free Consultation</button>
+            </div>
         </nav>
         <!-- HERO SECTION -->
-        <div class="header-background-image m-auto flex flex-col text-white text-center">
-            <div class="w-4/5 h-auto m-auto">
-            <h1 class="garamond-bold text-7xl">We Provide Effective Legal Solutions</h1>
-            <p class="mt-3.5 w-3/4 m-auto header-text">There are many variations of passages of Lorem Ipsum available, but the majority 
-                <br> have suffered alteration in some form, by injected humour.</p>
-            <!-- Search Input and Button -->
-            <div class="mt-8 w-full space-x-2">
-                <input class="w-[450px] h-16  bg-amber-50 rounded-lg pl-3 text-black" placeholder="Search your services " >
-                <button class="w-38 h-16">Search</button>
+        <div class="header-background-image m-auto flex flex-col text-white text-center py-10 md:py-0">
+            <div class="w-full md:w-4/5 h-auto m-auto px-4 md:px-0">
+                <h1 class="garamond-bold text-4xl md:text-7xl leading-tight md:leading-normal">We Provide Effective Legal Solutions</h1>
+                <p class="mt-3.5 w-full md:w-3/4 m-auto header-text text-sm md:text-base">There are many variations of passages of Lorem Ipsum available, but the majority
+                    <br class="hidden md:block"> have suffered alteration in some form, by injected humour.</p>
+                <!-- Search Input and Button -->
+                <div class="mt-8 w-full flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-2 justify-center">
+                    <input class="w-full md:w-[450px] h-12 md:h-16 bg-amber-50 rounded-lg pl-3 text-black text-sm md:text-base" placeholder="Search your services ">
+                    <button class="w-full md:w-38 h-12 md:h-16 text-sm md:text-base">Search</button>
+                </div>
             </div>
-        </div>
         </div>
     </header>
 
         <!-- MAIN CONTENT AREA -->
-        <main class="main">
+        <main class="main pt-10 pb-6 md:pt-15 md:pb-10 lg:pt-36 lg:pb-28"">
             <!-- LEGAL PRACTICE AREA SECTION -->
-            <section class="flex flex-col m-auto text-center">
+            <section class="flex flex-col m-auto text-center px-4 md:px-0">
                 <!-- Section Title and Description -->
-                <div>
-                    <h2>The Legal Practice Area</h2>
-                    <p>There are many variations of passages of Lorem Ipsum available,
-                    but the majority have <br> suffered alteration in some form, by injected humour.</p>
+                <div class="mb-10 md:mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold">The Legal Practice Area</h2>
+                    <p class="mt-3 text-sm md:text-base">There are many variations of passages of Lorem Ipsum available,
+                    but the majority have <br class="hidden md:block"> suffered alteration in some form, by injected humour.</p>
                 </div>
                 <!-- Grid of Legal Service Cards -->
-                <div class="w-full grid grid-cols-3 grid-rows-2 items-center p-5 ">
+                <div class="w-full grid grid-cols-1 md:grid-cols-3 grid-rows-auto md:grid-rows-2 items-center p-0 md:p-5 ">
                     <!-- Individual Legal Service Card (Business Law Example) -->
-                    <div class="card flex flex-col text-center items-center p-15 p-4 border-r-2 border-b-2 border-gray-300  hover:bg-gradient-to-b hover: from-gray-300 hover:to-white hover:cursor-pointer"  >
-                        <img class="w-18 h-18" src="./legal-solution-resources/images/business.png" alt="business law">
-                        <h3 class="mt-7 mb-6"> 
+                    <div class="card flex flex-col text-center items-center p-8 md:p-15 border-b-2 md:border-b-2 md:border-r-2 border-gray-300 hover:bg-gradient-to-b hover:from-gray-300 hover:to-white hover:cursor-pointer"  >
+                        <img class="w-16 h-16 md:w-18 md:h-18" src="./legal-solution-resources/images/business.png" alt="business law">
+                        <h3 class="mt-5 mb-4 text-xl md:text-2xl font-semibold"> 
                             Business Law
                         </h3>
-                        <p class="mb-7">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
-                        <img src="./legal-solution-resources/images/Frame.png" alt="Learn More">
+                        <p class="mb-5 text-sm md:text-base">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                        <img src="./legal-solution-resources/images/Frame.png" alt="Learn More" class="w-8 h-8 md:w-auto md:h-auto filter grayscale brightness-[300%] ">
                     </div>
                     <!-- Repeat for other service cards -->
-                    <div class="card flex flex-col text-center items-center p-15 p-4 border-r-2 border-b-2 border-gray-300 hover:bg-gradient-to-b hover: from-gray-300 hover:to-white hover:cursor-pointer">
-                        <img class="w-18 h-18" src="./legal-solution-resources/images/business.png" alt="business law">
-                        <h3 class="mt-7 mb-6"> 
-                            Business Law
+                    <div class="card flex flex-col text-center items-center p-8 md:p-15 border-b-2 md:border-b-2 md:border-r-2 border-gray-300 hover:bg-gradient-to-b hover:from-gray-300 hover:to-white hover:cursor-pointer">
+                        <img class="w-16 h-16 md:w-18 md:h-18" src="./legal-solution-resources/images/criminal.png" alt="criminal law">
+                        <h3 class="mt-5 mb-4 text-xl md:text-2xl font-semibold"> 
+                            Criminal Law
                         </h3>
-                        <p class="mb-7">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
-                        <img src="./legal-solution-resources/images/Frame.png" alt="Learn More">
+                        <p class="mb-5 text-sm md:text-base">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                        <img src="./legal-solution-resources/images/Frame.png" alt="Learn More" class="w-8 h-8 md:w-auto md:h-auto filter grayscale brightness-[300%] ">
                     </div>
-                    <div class="card flex flex-col text-center items-center p-15 border-b-2 border-gray-300 hover:bg-gradient-to-b hover: from-gray-300 hover:to-white hover:cursor-pointer">
-                        <img class="w-18 h-18" src="./legal-solution-resources/images/business.png" alt="business law">
-                        <h3 class="mt-7 mb-6"> 
-                            Business Law
+                    <div class="card flex flex-col text-center items-center p-8 md:p-15 border-b-2 md:border-b-2 md:border-r-0 border-gray-300 hover:bg-gradient-to-b hover:from-gray-300 hover:to-white hover:cursor-pointer">
+                        <img class="w-16 h-16 md:w-18 md:h-18" src="./legal-solution-resources/images/child.png" alt="child support">
+                        <h3 class="mt-5 mb-4 text-xl md:text-2xl font-semibold"> 
+                            Child Support
                         </h3>
-                        <p class="mb-7">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
-                        <img src="./legal-solution-resources/images/Frame.png" alt="Learn More">
+                        <p class="mb-5 text-sm md:text-base">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                        <img src="./legal-solution-resources/images/Frame.png" alt="Learn More" class="w-8 h-8 md:w-auto md:h-auto filter grayscale brightness-[300%] ">
                     </div>
-                    <div class="card flex flex-col text-center items-center p-15  border-r-2 border-gray-300 hover:bg-gradient-to-b hover: from-gray-300 hover:to-white hover:cursor-pointer">
-                        <img class="w-18 h-18" src="./legal-solution-resources/images/business.png" alt="business law">
-                        <h3 class="mt-7 mb-6"> 
-                            Business Law
+                    <div class="card flex flex-col text-center items-center p-8 md:p-15 border-b-2 md:border-b-0 md:border-r-2 border-gray-300 hover:bg-gradient-to-b hover:from-gray-300 hover:to-white hover:cursor-pointer">
+                        <img class="w-16 h-16 md:w-18 md:h-18" src="./legal-solution-resources/images/education.png" alt="education law">
+                        <h3 class="mt-5 mb-4 text-xl md:text-2xl font-semibold"> 
+                            Education Law
                         </h3>
-                        <p class="mb-7">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
-                        <img src="./legal-solution-resources/images/Frame.png" alt="Learn More">
+                        <p class="mb-5 text-sm md:text-base">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                        <img src="./legal-solution-resources/images/Frame.png" alt="Learn More" class="w-8 h-8 md:w-auto md:h-auto filter grayscale brightness-[300%] ">
                     </div>
-                    <div class="card flex flex-col text-center items-center p-15 border-r-2 border-gray-300 hover:bg-gradient-to-b hover: from-gray-300 hover:to-white hover:cursor-pointer">
-                        <img class="w-18 h-18" src="./legal-solution-resources/images/business.png" alt="business law">
-                        <h3 class="mt-7 mb-6"> 
-                            Business Law
+                    <div class="card flex flex-col text-center items-center p-8 md:p-15 border-b-2 md:border-b-0 md:border-r-2 border-gray-300 hover:bg-gradient-to-b hover:from-gray-300 hover:to-white hover:cursor-pointer">
+                        <img class="w-16 h-16 md:w-18 md:h-18" src="./legal-solution-resources/images/divorce.png" alt="divorce law">
+                        <h3 class="mt-5 mb-4 text-xl md:text-2xl font-semibold"> 
+                            Divorce Law
                         </h3>
-                        <p class="mb-7">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
-                        <img src="./legal-solution-resources/images/Frame.png" alt="Learn More">
+                        <p class="mb-5 text-sm md:text-base">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                        <img src="./legal-solution-resources/images/Frame.png" alt="Learn More" class="w-8 h-8 md:w-auto md:h-auto filter grayscale brightness-[300%] ">
                     </div>
-                    <div class="card flex flex-col text-center items-center p-15 borer-b-2 border-gray-300 hover:bg-gradient-to-b hover: from-gray-300 hover:to-white hover:cursor-pointer">
-                        <img class="w-18 h-18" src="./legal-solution-resources/images/business.png" alt="business law">
-                        <h3 class="mt-7 mb-6"> 
-                            Business Law
+                    <div class="card flex flex-col text-center items-center p-8 md:p-15 border-b-0 md:border-b-0 md:border-r-0 border-gray-300 hover:bg-gradient-to-b hover:from-gray-300 hover:to-white hover:cursor-pointer">
+                        <img class="w-16 h-16 md:w-18 md:h-18" src="./legal-solution-resources/images/tax.png" alt="tax law">
+                        <h3 class="mt-5 mb-4 text-xl md:text-2xl font-semibold"> 
+                            Tax Law
                         </h3>
-                        <p class="mb-7">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
-                        <img src="./legal-solution-resources/images/Frame.png" alt="Learn More">
+                        <p class="mb-5 text-sm md:text-base">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                        <img src="./legal-solution-resources/images/Frame.png" alt="Learn More" class="w-8 h-8 md:w-auto md:h-auto filter grayscale brightness-[300%] ">
                     </div>
                     
                 </div>
             </section>
             <!-- TESTIMONIALS SECTION -->
-            <section class="testimonial-section flex flex-col items-center text-center mt-28">
-                <h3>What Our Client Say</h3>
-                <p class="w-3/5 mt-6">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+            <section class="testimonial-section flex flex-col items-center text-center px-4 sm:px-20 mt-16 sm:mt-10">
+                <h3 class="text-3xl md:text-4xl font-bold">What Our Client Say</h3>
+                <p class="w-full md:w-3/5 mt-3 md:mt-6 text-sm md:text-base">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
 
                 <!-- Testimonial Slider/Image -->
-                <div class="testimonials-slider-image mt-14 w-full h-[500px] bg-[url('./legal-solution-resources/images/slider-1.jpg')] bg-cover bg-no-repeat bg-center">
+                <div class="testimonials-slider-image mt-8 md:mt-14 w-full h-[400px] md:h-[500px] bg-[url('./legal-solution-resources/images/slider-1.jpg')] bg-cover bg-no-repeat bg-center rounded-lg">
                     <!-- Testimonial Content Overlay -->
-                    <div class=" testimonials-content w-full h-full bg-black/70 rounded-[10px] flex flex-col justify-center items-center" >
-                        <img class="w-[80px] h-[80px] rounded-[50%] border-white border-[4px] mt-[-40px]" src="./legal-solution-resources/headshot.jpg" alt="Client Picture">
-                        <span class="client-name garamond-bold text-2xl text-white mt-6">Awlad Hossain</span>
-                        <p class="textimonials-content-p">UIX Designer</p>
-                        <p class="mt-8 w-[75%] textimonials-content-p">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur.</p>
+                    <div class="testimonials-content w-full h-full bg-black/70 rounded-lg flex flex-col justify-center items-center p-4" >
+                        <img class="w-[60px] h-[60px] rounded-full border-white border-[3px] mt-[-30px] sm:mt-[-40px] md:w-[80px] md:h-[80px] md:border-[4px]" src="./legal-solution-resources/images/headshot.jpg" alt="Client Picture">
+                        <span class="client-name garamond-bold text-xl md:text-2xl text-white mt-4 md:mt-6">Awlad Hossain</span>
+                        <p class="textimonials-content-p text-sm md:text-base">UIX Designer</p>
+                        <p class="mt-4 md:mt-8 w-full md:w-[75%] textimonials-content-p text-xs md:text-base">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur.</p>
                     </div>
 
                 </div>
             </section>
             <!-- FREQUENTLY ASKED QUESTIONS (FAQ) SECTION -->
-            <section class="flex flex-col items-center text-center mt-28"">
-                <h3>Frequently Asked Any Questions</h3>
-                <p class="w-3/5">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
-                <div class="w-full h-[575px] mt-16 flex ">
+            <section class="flex flex-col items-center text-center mt-16 md:mt-28 px-4 md:px-0">
+                <h3 class="text-3xl md:text-4xl font-bold">Frequently Asked Any Questions</h3>
+                <p class="w-full md:w-3/5 mt-3 md:mt-6 text-sm md:text-base">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                <div class="w-full h-auto md:h-[575px] mt-8 md:mt-16 flex flex-col md:flex-row gap-6">
                     <!-- FAQ Accordion/Content (Left Side) -->
-                    <div class="left grid grid-cols-1 w-1/2 h-full gird-rows-[40%_20%_20%_20%] gap-4 " >
+                    <div class="left grid grid-cols-1 w-full md:w-1/2 h-auto md:h-full gap-4" >
                         <!-- Individual FAQ Item -->
-                        <div class="bg-[#F3F3F3] rounded-b-lg p-9 justify-center text-left ">
-                            <h4>1. Are application fee waivers available?</h4>
-                            <p class="mt-3">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, . </p>
+                        <div class="bg-[#F3F3F3] rounded-lg p-6 md:p-9 justify-center text-left ">
+                            <h4 class="text-base md:text-lg font-semibold">1. Are application fee waivers available?</h4>
+                            <p class="mt-3 text-sm md:text-base">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, . </p>
                             
                         </div>
                         <!-- Repeat for other FAQ items -->
-                        <div class="bg-[#F3F3F3] rounded-b-lg p-9 justify-center text-left">
-                            <h4>1. Are application fee waivers available?</h4>                            
+                        <div class="bg-[#F3F3F3] rounded-lg p-6 md:p-9 justify-center text-left">
+                            <h4 class="text-base md:text-lg font-semibold">1. Are application fee waivers available?</h4>                            
                         </div>
-                        <div class="bg-[#F3F3F3] rounded-b-lg p-9 justify-center text-left">
-                            <h4>1. Are application fee waivers available?</h4>                            
+                        <div class="bg-[#F3F3F3] rounded-lg p-6 md:p-9 justify-center text-left">
+                            <h4 class="text-base md:text-lg font-semibold">1. Are application fee waivers available?</h4>                            
                         </div>
-                        <div class="bg-[#F3F3F3] rounded-b-lg p-9 justify-center text-left">
-                            <h4>1. Are application fee waivers available?</h4>                            
+                        <div class="bg-[#F3F3F3] rounded-lg p-6 md:p-9 justify-center text-left">
+                            <h4 class="text-base md:text-lg font-semibold">1. Are application fee waivers available?</h4>                            
                         </div>
                         
                     </div>
                     <!-- FAQ Image (Right Side) -->
-                    <div class="right w-1/2 h-full">
-                        <img src="./legal-solution-resources/images/faq.png" alt="faq">
+                    <div class="right w-full md:w-1/2 h-auto md:h-full flex justify-center items-center">
+                        <img src="./legal-solution-resources/images/faq.png" alt="faq" class="w-full h-auto object-contain">
                     </div>
                 </div>
             </section>
             <!-- CONTACT US SECTION -->
-            <section class="flex flex-col items-center text-center mt-28">
-                <h3>Contact With Us</h3>
-                <p class="w-3/5">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
-                <div class="w-full h-[575px] mt-16 flex gap-6">
+            <section class="flex flex-col items-center text-center mt-16 md:mt-28 px-4 md:px-0">
+                <h3 class="text-3xl md:text-4xl font-bold">Contact With Us</h3>
+                <p class="w-full md:w-3/5 mt-3 md:mt-6 text-sm md:text-base">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                <div class="w-full h-auto md:h-[575px] mt-8 md:mt-16 flex flex-col md:flex-row gap-6">
                     <!-- Contact Information (Left Side) -->
-                    <div class="left grid grid-cols-2 grid-rows-2 w-1/2 h-full gap-6">
-                        <div class="bg-[#F3F3F3] rounded-lg p-9 flex flex-col justify-center items-center text-center">
-                            <img src="./legal-solution-resources/images/address.png" alt="address" class="w-12 h-12 mb-4">
-                            <h4>Address</h4>
-                            <p>A108 Adam Street,<br>New York, NY 535022</p>
+                    <div class="left grid grid-cols-1 md:grid-cols-2 grid-rows-auto md:grid-rows-2 w-full md:w-1/2 h-auto md:h-full gap-6">
+                        <div class="bg-[#F3F3F3] rounded-lg p-6 md:p-9 flex flex-col justify-center items-center text-center">
+                            <img src="./legal-solution-resources/images/address.png" alt="address" class="w-8 h-8 md:w-12 md:h-12 mb-2 md:mb-4 filter ">
+                            <h4 class="text-base md:text-lg font-semibold">Address</h4>
+                            <p class="text-sm md:text-base">A108 Adam Street,<br>New York, NY 535022</p>
                         </div>
-                        <div class="bg-[#F3F3F3] rounded-lg p-9 flex flex-col justify-center items-center text-center">
-                            <img src="./legal-solution-resources/images/call.png" alt="call" class="w-12 h-12 mb-4">
-                            <h4>Call Us</h4>
-                            <p>+88 01750 00 00 00<br>+88 01750 00 00 00</p>
+                        <div class="bg-[#F3F3F3] rounded-lg p-6 md:p-9 flex flex-col justify-center items-center text-center">
+                            <img src="./legal-solution-resources/images/call.png" alt="call" class="w-8 h-8 md:w-12 md:h-12 mb-2 md:mb-4 filter ">
+                            <h4 class="text-base md:text-lg font-semibold">Call Us</h4>
+                            <p class="text-sm md:text-base">+88 01750 00 00 00<br>+88 01750 00 00 00</p>
                         </div>
-                        <div class="bg-[#F3F3F3] rounded-lg p-9 flex flex-col justify-center items-center text-center">
-                            <img src="./legal-solution-resources/images/email.png" alt="email" class="w-12 h-12 mb-4">
-                            <h4>Email Us</h4>
-                            <p>info@gmail.com<br>info@gmail.com</p>
+                        <div class="bg-[#F3F3F3] rounded-lg p-6 md:p-9 flex flex-col justify-center items-center text-center">
+                            <img src="./legal-solution-resources/images/email.png" alt="email" class="w-8 h-8 md:w-12 md:h-12 mb-2 md:mb-4 filter ">
+                            <h4 class="text-base md:text-lg font-semibold">Email Us</h4>
+                            <p class="text-sm md:text-base">info@gmail.com<br>info@gmail.com</p>
                         </div>
-                        <div class="bg-[#F3F3F3] rounded-lg p-9 flex flex-col justify-center items-center text-center">
-                            <img src="./legal-solution-resources/images/time.png" alt="time" class="w-12 h-12 mb-4">
-                            <h4>Working Hours</h4>
-                            <p>Mon-Fri: 9AM to 5PM<br>Sunday: 9AM to 1 PM</p>
+                        <div class="bg-[#F3F3F3] rounded-lg p-6 md:p-9 flex flex-col justify-center items-center text-center">
+                            <img src="./legal-solution-resources/images/time.png" alt="time" class="w-8 h-8 md:w-12 md:h-12 mb-2 md:mb-4 filter">
+                            <h4 class="text-base md:text-lg font-semibold">Working Hours</h4>
+                            <p class="text-sm md:text-base">Mon-Fri: 9AM to 5PM<br>Sunday: 9AM to 1 PM</p>
                         </div>
                     </div>
                     <!-- Contact Form (Right Side) -->
-                    <div class="right w-1/2 h-full flex flex-col gap-6">
-                        <input type="text" placeholder="Your Name" class="w-full h-50 bg-[#F3F3F3] rounded-lg pl-5">
-                        <input type="email" placeholder="Your Email" class="w-full h-50 bg-[#F3F3F3] rounded-lg pl-5">
-                        <input type="text" placeholder="Subject" class="w-full h-50 bg-[#F3F3F3] rounded-lg pl-5">
-                        <textarea placeholder="Your Message" class="w-full h-full bg-[#F3F3F3] rounded-lg p-5 resize-none"></textarea>
-                        <button class="w-full h-40  bg-[#B68C5A] text-white rounded-lg">Send Message</button>
+                    <div class="right w-full md:w-1/2 h-auto md:h-full flex flex-col gap-4 md:gap-6">
+                        <input type="text" placeholder="Your Name" class="w-full sm:h-20 md:h-30 bg-[#F3F3F3] rounded-lg pl-5 text-sm md:text-base">
+                        <input type="email" placeholder="Your Email" class="w-full sm:h-20 md:h-30 bg-[#F3F3F3] rounded-lg pl-5 text-sm md:text-base">
+                        <input type="text" placeholder="Subject" class="w-full sm:h-20 md:h-30 bg-[#F3F3F3] rounded-lg pl-5 text-sm md:text-base">
+                        <textarea placeholder="Your Message" class="w-full sm:h-50 md:h-70 bg-[#F3F3F3] rounded-lg p-5 resize-none text-sm md:text-base"></textarea>
+                        <button class="w-full lg:h-30 md:h-16 bg-[#B68C5A] text-white rounded-lg text-sm md:text-base">Send Message</button>
                     </div>
                 </div>
             </section>
         </main>
     
         <!-- FOOTER SECTION -->
-        <footer class="bg-black text-white py-20 mt-8">
+        <footer class="bg-black lg:mt-5 text-white py-10 md:py-20 mt-16 md:mt-28">
             <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 px-4">
                 <!-- Justice Info -->
                 <div>
                     <div class="flex items-center mb-4">
-                        <img src="./legal-solution-resources/images/logo2.png" alt="logo" class=" mr-2">
+                        <img src="./legal-solution-resources/images/logo2.png" alt="logo" >
                     </div>
-                    <p class="text-gray-400 text-sm">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                    <p class="text-gray-400 text-xs md:text-sm">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
                 </div>
     
                 <!-- Useful Links -->
                 <div>
-                    <h4 class="text-xl font-semibold mb-6">Useful Link</h4>
-                    <ul class="space-y-3 text-gray-400">
+                    <h4 class="text-lg md:text-xl font-semibold mb-4 md:mb-6">Useful Link</h4>
+                    <ul class="space-y-2 md:space-y-3 text-gray-400 text-xs md:text-sm">
                         <li><a href="#" class="hover:text-white">Homes</a></li>
                         <li><a href="#" class="hover:text-white">About Us</a></li>
                         <li><a href="#" class="hover:text-white">Cases</a></li>
@@ -227,8 +228,8 @@
     
                 <!-- Contact Now -->
                 <div>
-                    <h4 class="text-xl font-semibold mb-6">Contact Now</h4>
-                    <ul class="space-y-3 text-gray-400">
+                    <h4 class="text-lg md:text-xl font-semibold mb-4 md:mb-6">Contact Now</h4>
+                    <ul class="space-y-2 md:space-y-3 text-gray-400 text-xs md:text-sm">
                         <li>555 4th St NW, Washington DC 20530, United States</li>
                         <li>+88 01750 000 000</li>
                         <li>+88 01750 000 000</li>
@@ -239,12 +240,12 @@
     
                 <!-- Subscribe -->
                 <div>
-                    <h4 class="text-xl font-semibold mb-6">Subscribe</h4>
-                    <p class="text-gray-400 mb-4 w-3/4">Subscribe for our latest & Articles. We Won't Give You Spam Mails</p>
-                    <div class="flex gap-1">
-                        <input type="email" placeholder="Email Address" class="w-full p-3 rounded-l-lg bg-white text-white placeholder-black focus:outline-none">
-                        <button class="bg-[#B68C5A] p-3 rounded-r-lg ml-[-50px] w-[25%] flex items-center justify-center ">
-                            <img src="./legal-solution-resources/images/Frame.png" alt="send" class=" rotate-6 filter grayscale brightness-[300%]">
+                    <h4 class="text-lg md:text-xl font-semibold mb-4 md:mb-6">Subscribe</h4>
+                    <p class="text-gray-400 mb-3 md:mb-4 w-full text-xs md:text-sm">Subscribe for our latest & Articles. We Won't Give You Spam Mails</p>
+                    <div class="flex">
+                        <input type="email" placeholder="Email Address" class=" w-full p-2 md:p-3 rounded-l-lg bg-white text-black placeholder-gray-500 focus:outline-none text-xs md:text-sm">
+                        <button class="bg-[#B68C5A] p-2 md:p-3 rounded-r-lg flex items-center justify-center">
+                            <img src="./legal-solution-resources/images/Frame.png" alt="send" class="w-4 h-4  md:w-6 md:h-6 rotate-320 filter grayscale brightness-[300%]">
                         </button>
                     </div>
                 </div>
